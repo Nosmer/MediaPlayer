@@ -1,0 +1,74 @@
+.root{
+    -fx-background-color: black;    
+}
+
+#artist, #album, #year, #title{
+    -fx-text-fill: white;
+    -fx-font-size: 12pt;
+}
+
+#openButton{
+    -fx-graphic:url("resources/open_file.png")
+}
+
+#volumeLow{
+    -fx-image:url("resources/volL.png")
+}
+
+#volumeHigh{
+    -fx-image:url("resources/volH.png")
+}
+
+.mediaText{
+    -fx-text-fill: white;
+}
+
+.statusDisplay{
+    -fx-border-color: white;
+    -fx-border-radius: 2;
+    -fx-border-width: 1;
+    -fx-text-fill: white;
+    -fx-font-size: 10pt;
+}
+
+#seekStartButton{
+    -fx-graphic:url(resources/prev.png);
+}
+
+#seekEndButton{
+    -fx-graphic:url(resources/next.png);
+}
+
+#playPauseButton:hover, #seekEndButton:hover, #seekStartButton:hover, 
+#openButton:hover, #eqButton:hover, #backButton:hover{
+    -fx-background-color:aliceblue;
+}
+
+#eqButton{
+    -fx-alignment: center-right;
+    -fx-graphic:url(resources/equalizer.png);
+}
+
+#backButton{
+    -fx-font-size: 12pt;
+    -fx-alignment: center-left;
+    -fx-graphic:url(resources/music-player.png);
+}
+
+.eqSlider {
+  -fx-background-radius: 5;
+  -fx-background-color: #222, #888, black;
+  -fx-background-insets: 0, 1 0 0 1, 1;
+  -fx-padding: 10;
+}
+
+.eqSlider:vertical.track{
+    -fx-padding: 5pt;
+}
+
+.spectrumBar{
+    -fx-background-radius: 5;
+    -fx-background-color: #222, #888, black;
+    -fx-background-insets: 0, 1 0 0 1, 1;
+    -fx-padding: 10;
+}
